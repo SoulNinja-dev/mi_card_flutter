@@ -6,7 +6,8 @@ void main() {
       home: Scaffold(
         backgroundColor: Colors.teal,
         body: SafeArea(
-          child: Column(
+          child: Row(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
             children: <Widget>[
               Container(
                 height: 100.0,
@@ -14,12 +15,14 @@ void main() {
                 color: Colors.white,
                 child: Text("Container 1"),
               ),
+              SizedBox(width: 20.0),
               Container(
                 width: 100.0,
                 height: 100.0,
                 color: Colors.blue,
                 child: Text("Container 2"),
               ),
+              SizedBox(width: 20.0),
               Container(
                 width: 100.0,
                 height: 100.0,
