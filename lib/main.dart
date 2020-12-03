@@ -6,28 +6,30 @@ void main() {
       home: Scaffold(
         backgroundColor: Colors.teal,
         body: SafeArea(
-          child: Row(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
+          child: Column(
             children: <Widget>[
-              Container(
-                height: 100.0,
-                width: 100.0,
-                color: Colors.white,
-                child: Text("Container 1"),
+              CircleAvatar(
+                radius: 50.0,
+                backgroundImage: AssetImage('images/me.jpg'),
               ),
-              SizedBox(width: 20.0),
-              Container(
-                width: 100.0,
-                height: 100.0,
-                color: Colors.blue,
-                child: Text("Container 2"),
+              Text(
+                "Aadhithyan",
+                style: TextStyle(
+                  fontSize: 40.0,
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold,
+                  fontFamily: 'Pacifico',
+                ),
               ),
-              SizedBox(width: 20.0),
-              Container(
-                width: 100.0,
-                height: 100.0,
-                color: Colors.red,
-                child: Text("Container 3"),
+              Text(
+                "Full Stack Developer",
+                style: TextStyle(
+                  fontSize: 25.0,
+                  color: Colors.teal.shade100,
+                  letterSpacing: 2.5,
+                  fontWeight: FontWeight.bold,
+                  fontFamily: 'SourceSansPro',
+                ),
               ),
             ],
           ),
